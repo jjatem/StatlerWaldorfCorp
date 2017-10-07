@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\StatlerWaldorfCorp.TeamService.csproj" />
+    <ProjectReference Include="..\..\src\StatlerWaldorfCorp.TeamService\StatlerWaldorfCorp.TeamService.csproj" />
   </ItemGroup>
 
   <ItemGroup>
