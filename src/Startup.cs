@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using StatlerWaldorfCorp.TeamService.Persistence;
 
-namespace StatlerWaldorfCorp
+namespace StatlerWaldorfCorp.TeamService
 {
     public class Startup
     {
@@ -29,6 +30,7 @@ namespace StatlerWaldorfCorp
         {
             // Add framework services.
             services.AddMvc();
+            services.AddScoped<ITeamRepository, MemoryTeamRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
